@@ -1,5 +1,5 @@
 
-#include <cmath> // atof atoi
+#include <cstdlib> // atof atoi
 #include <iostream>
 using namespace std;
 
