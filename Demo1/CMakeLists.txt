@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(Demo1)
 
+include(CTest)
+
 # 是否使用自己的库
 # option(USE_MYMATH "Use provided math implementation" ON)
 include(${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
