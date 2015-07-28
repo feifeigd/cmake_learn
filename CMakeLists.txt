@@ -18,7 +18,7 @@ add_subdirectory(Demo1)
 #cpack -C CPackSourceConfig.cmake
 
 # 构建CPack安装包
-include(InstallRequiredSystemLibries)
+include(InstallRequiredSystemLibraries)
 set(CPACK_RESOURCE_FILE_LICENSE ${CMAKE_CURRENT_SOURCE_DIR}/License.txt)
 # 版本号
 set(CPACK_PACKAGE_VERSION_MAJOR "${Demo1_VERSION_MAJOR}")
