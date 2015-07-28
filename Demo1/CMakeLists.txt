@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
-
-project(Demo1)
+cmake_policy(SET CMP0048 NEW)
+project(Demo1 VERSION 1.0.1)
 
 include(CTest)
 
