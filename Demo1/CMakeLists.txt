@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8)
 cmake_policy(SET CMP0048 NEW)
 project(Demo1 VERSION 1.0.1)
 
-include(CTest)
-
 # 是否使用自己的库
 # option(USE_MYMATH "Use provided math implementation" ON)
 include(${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
@@ -27,6 +25,20 @@ add_executable(Demo1 ${SRC})
 target_link_libraries(Demo1 ${EXTRA_LIBS})
 
 install(TARGETS Demo1 DESTINATION bin)
+
+#生成二进制安装包：
+#cpack -C CPackConfig.cmake
+
+#生成源码安装包
+#cpack -C CPackSourceConfig.cmake
+
+# 构建CPack安装包
+include(InstallRequiredSystemLibraries)
+set(CPACK_RESOURCE_FILE_LICENSE ${CMAKE_CURRENT_SOURCE_DIR}/License.txt)
+# 版本号
+set(CPACK_PACKAGE_VERSION_MAJOR "${Demo1_VERSION_MAJOR}")	# 这两个变量在project指令的VERSION指定
+set(CPACK_PACKAGE_VERSION_MINOR "${Demo1_VERSION_MINOR}")
+include(CPack)
 
 # 启用测试
 enable_testing()
