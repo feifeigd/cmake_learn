@@ -1,5 +1,5 @@
 
-#include "MathFunctions.h"
+#include <MathFunctions.h>
 
 #include <cstdlib> // atof atoi
 #include <iostream>
