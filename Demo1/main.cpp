@@ -1,4 +1,5 @@
 
+#include <cmath> // atof atoi
 #include <iostream>
 using namespace std;
 
