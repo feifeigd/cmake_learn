@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 2.8)
 project(Demo1)
 
 # 是否使用自己的库
-option(USE_MYMATH "Use provided math implementation" ON)
+# option(USE_MYMATH "Use provided math implementation" ON)
+include(${CMAKE_ROOT}/Modules/CheckFunctionExists.cmake)
+check_function_exists(pow HAVE_POW)
 
 # 配置文件的选项要在配置文件指令之前定义
 
