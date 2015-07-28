@@ -1,14 +1,10 @@
 
+#include "MathFunctions.h"
+
 #include <cstdlib> // atof atoi
 #include <iostream>
 using namespace std;
 
-double power(double base, int exponent){
-	int result = base;
-	for (int i = 1; i < exponent; ++i)
-		result *= base;
-	return result;
-}
 
 int main(int argc, char* argv[]){
 	if (argc < 3)
