@@ -1,6 +1,6 @@
 #pragma once
 
 #cmakedefine HAVE_POW
-#ifdef HAVE_POW
+#ifndef HAVE_POW
 #define USE_MYMATH
 #endif
