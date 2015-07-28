@@ -12,7 +12,7 @@ check_function_exists(pow HAVE_POW)
 # 配置文件
 configure_file(config.h.in ${PROJECT_SOURCE_DIR}/config.h)
 
-if(USE_MYMATH)
+if(HAVE_POW)
 	include_directories(math)
 	# 库代码
 	add_subdirectory(math)

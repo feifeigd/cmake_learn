@@ -1,10 +1,10 @@
 
 #include "config.h"
 
+#include <cmath>
 #ifdef USE_MYMATH
 #include <MathFunctions.h>
 #else
-#include <cmath>
 #endif // USE_MYMATH
 
 #include <cstdlib> // atof atoi
