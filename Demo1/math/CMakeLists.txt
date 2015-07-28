@@ -1,9 +1,9 @@
-aux_source_directory(. SRC)
+ï»¿aux_source_directory(. SRC)
 add_library(MathFunctions ${SRC})
 
-# °²×°Í·ÎÄ¼þ
+# å®‰è£…å¤´æ–‡ä»¶
 file(GLOB INC ./*.h*)
 install(FILES ${INC} DESTINATION include/Demo)
 
-# °²×°¿â
+# å®‰è£…åº“
 install(TARGETS MathFunctions DESTINATION lib)

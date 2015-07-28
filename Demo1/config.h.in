@@ -1,6 +1,10 @@
-#pragma once
+﻿#pragma once
 
 #cmakedefine HAVE_POW
 #ifndef HAVE_POW
 #define USE_MYMATH
 #endif
+
+// 版本号
+#define Demo_VERSION_MAJOR @Demo1_VERSION_MAJOR@
+#define Demo_VERSION_MINOR @Demo1_VERSION_MINOR@
