@@ -1,4 +1,4 @@
-﻿aux_source_directory(. SRC)
+aux_source_directory(. SRC)
 add_library(MathFunctions ${SRC})
 
 # 安装头文件
