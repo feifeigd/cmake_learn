@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 project(Demo1)
 
 # 配置文件
-configure_file(config.h.in ${PROJECT_BINARY_DIR}/config.h)
+configure_file(config.h.in ${PROJECT_SOURCE_DIR}/config.h)
 
 # 是否使用自己的库
 option(USE_MYMATH "Use provided math implementation" ON)
