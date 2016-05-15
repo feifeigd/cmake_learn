@@ -3,10 +3,10 @@ language: cpp
 before_script:
     cd build && cmake ..
 script:
-	make -j8
+    make -j8
 
 notifications:
-	recipients:
-		- 502207456@qq.com
-	email:
-		on_failure: change
+    recipients:
+        - 502207456@qq.com
+    email:
+        on_failure: change
