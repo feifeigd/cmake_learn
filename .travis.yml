@@ -4,3 +4,9 @@ before_script:
 	cd build && cmake ..
 script:
 	make -j8
+
+notifications:
+	recipients:
+		- 502207456@qq.com
+	email:
+		on_failure: change
