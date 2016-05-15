@@ -1,8 +1,8 @@
 language: cpp
 
 before_script:
-    if [ ! -d "build" ]; then mkdir build fi
-    cd build && cmake ..
+    - if [ ! -d "build" ]; then mkdir build fi
+    - cd build && cmake ..
 script:
     make -j8
 
