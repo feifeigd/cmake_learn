@@ -39,9 +39,6 @@ set(CPACK_PACKAGE_VERSION_MAJOR "${Demo1_VERSION_MAJOR}")	# 这两个变量在pr
 set(CPACK_PACKAGE_VERSION_MINOR "${Demo1_VERSION_MINOR}")
 include(CPack)
 
-# 启用测试
-enable_testing()
-
 add_test(test_run Demo1 5 2)
 
 add_test(test_usage Demo1)
