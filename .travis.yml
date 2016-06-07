@@ -12,7 +12,7 @@ compiler:
     - clang
 
 before_install:
-    - if [ $TRAVIS_OS_NAME == linux ]; then ./scripts/before_install_ubuntu.sh; fi
+    - if [ $TRAVIS_OS_NAME == linux ]; then chmod +x ./scripts/before_install_ubuntu.sh && ./scripts/before_install_ubuntu.sh; fi
 
 before_script:
     - mkdir build 
