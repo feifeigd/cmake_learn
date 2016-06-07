@@ -29,7 +29,7 @@ install(TARGETS Demo1 DESTINATION bin)
 cpack(CPackConfig.cmake)
 
 #生成源码安装包
-cpack -C CPackSourceConfig.cmake
+cpack(CPackSourceConfig.cmake)
 
 # 构建CPack安装包
 include(InstallRequiredSystemLibraries)
