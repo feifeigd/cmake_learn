@@ -1,7 +1,7 @@
 language: cpp
 
 sudo: required
-dist: trusty
+dist: cmake-demo-1.0.1
 
 os: 
     - linux
