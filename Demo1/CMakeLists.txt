@@ -26,7 +26,7 @@ target_link_libraries(Demo1 ${EXTRA_LIBS})
 install(TARGETS Demo1 DESTINATION bin)
 
 #生成二进制安装包：
-cpack -C CPackConfig.cmake
+cpack(CPackConfig.cmake)
 
 #生成源码安装包
 cpack -C CPackSourceConfig.cmake
