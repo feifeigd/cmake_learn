@@ -1,7 +1,7 @@
 language: cpp
 
 before_install:
-    - sudo add-apt-repository ppa:cmake
+    - sudo add-apt-repository ppa:george-edison55/precise-backports
     - sudo apt-get update 
     - sudo apt-get install cmake
 
