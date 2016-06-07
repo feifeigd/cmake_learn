@@ -11,19 +11,19 @@ check_function_exists(pow HAVE_POW)
 # 配置文件
 configure_file(config.h.in ${PROJECT_SOURCE_DIR}/config.h)
 
-if(NOT HAVE_POW)
-	include_directories(math)
+# if(NOT HAVE_POW)
+	# include_directories(math)
 	# 库代码
-	add_subdirectory(math)
-	set(EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
-endif()
+	# add_subdirectory(math)
+	# set(EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
+# endif()
 
 
-aux_source_directory(. SRC)
-add_executable(Demo1 ${SRC})
-target_link_libraries(Demo1 ${EXTRA_LIBS})
+# aux_source_directory(. SRC)
+# add_executable(Demo1 ${SRC})
+# target_link_libraries(Demo1 ${EXTRA_LIBS})
 
-install(TARGETS Demo1 DESTINATION bin)
+# install(TARGETS Demo1 DESTINATION bin)
 
 #生成二进制安装包：
 #cpack -C CPackConfig.cmake
