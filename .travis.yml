@@ -1,5 +1,7 @@
 language: cpp
 
+sudo: required
+
 os: 
     - linux
     - osx
@@ -21,6 +23,7 @@ script:
 notifications:
     recipients:
         - 502207456@qq.com
+        - 13632323692@139.com
     email:
         on_success: change
         on_failure: always
