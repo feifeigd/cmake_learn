@@ -1,7 +1,7 @@
 language: cpp
 
 before_script:
-    - mkdir build 
+    - mkdir build && cmake --version
     - cd build && cmake ..
 script:
     make -j8
