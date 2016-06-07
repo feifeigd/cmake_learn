@@ -26,6 +26,6 @@ notifications:
         - 502207456@qq.com
         - 13632323692@139.com
     email:
-        on_success: change
+        on_success: always
         on_failure: always
 
