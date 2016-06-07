@@ -8,6 +8,8 @@ os:
     - osx
 
 compiler: 
+    - visual studio 2010
+    - visual studio 2015
     - gcc
     - clang
 
