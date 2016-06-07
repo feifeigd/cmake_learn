@@ -1,4 +1,4 @@
-
+cmake_policy(SET CMP0048 NEW)
 project(Demo1 VERSION 1.0.1)
 
 # 是否使用自己的库
