@@ -9,5 +9,5 @@ if(UNIX)
 	set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 endif()
 
-#add_subdirectory(Demo1)
+add_subdirectory(Demo1)
 
