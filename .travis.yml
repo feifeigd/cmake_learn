@@ -1,5 +1,5 @@
 language: cpp
-	
+
 before_install:
     - sudo add-apt-repository ppa:cmake
     - sudo apt-get update 
